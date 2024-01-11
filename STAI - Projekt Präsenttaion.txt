@@ -1,0 +1,56 @@
+STAI - Projekt Präsenttaion
+--------------------------------------------------------
+Dauer: 20 min
+
+Themen:
+- Einführung --- 3 min --- Patryk
+	- Was machen wir?
+	- Visitor Prediction for BWI Library
+- Data Exploration --- 3 min --- Patryk
+	- Von wo kommen die Daten?
+	- Wie sehen aus?
+	- Viele Nans
+- Data preprocessing --- 4 min --- Patryk
+	- Missing values (Warum backfill?)
+	- Fill values according to other values
+- Feature Extraction --- 3 min --- Firaz
+	- Wie haben wir mehr features extrahiert?
+	- Wozu?
+	- Univariate/Multivariate
+	- Loockback wichtig! Sequnzen übergeben
+- Correlations/Feature Selection --- 5 min --- Firaz
+	- timestemp als index
+	- Correlations
+	- Choose features with the best correlations
+	- explain our choice
+- Data preparation --- 5 min --- Patryk
+	- to.numpy()
+	- scalen (notwenig LSTM)
+	- split features and labels
+	- split train and test data
+	- flip seuquenz data
+	- Reshape the data into 3 diimensional data
+	- turn dat into tensors
+- Datset and Dataloader --- 1 min --- Patryk
+	- short explanation
+	- explain BS
+- Model Architecture --- 7 min --- Firaz/Patryk
+	- Why LSTM?
+	- explain LSTM architecture / workflow
+	- LSTM is a subcategiry of RNN
+	- explain out architecture
+	- expain forward pass
+- Training + Evaluation --- 5 min --- Patryk
+	- explain parameter choice
+	- short explanation of the trainloop
+	- show training results
+	- Explain Values of the validation
+	- Explain Evaluation
+
+
+---> 38 min
+
+Patyk: 21
+Firaz: 17
+
+
