@@ -1,0 +1,78 @@
+STAI - Projekt Präsenttaion
+--------------------------------------------------------------------------
+Dauer: 20 min
+
+Themen:
+- Einführung --- 3 min --- Patryk
+    - Begrüßung
+    - Projekt beschreiben (Idee, Ziel, Methode)
+    - Die Verbindung zur BWI-Bibliothek darstellen
+    - Workflow kurz erläutern
+    - Auf Teil 0. nicht wirklich eingehen
+
+- Data Exploration --- 3 min --- Patryk
+    - Die Daten wurden händlich erfasst und in tabellenfor  gebracht
+    - Zeitreihendaten (Zeitstempel, Anzahl der Besucher)
+	- Viele Missing Values
+
+- Data preprocessing --- 4 min --- Patryk
+	- Missing values mit backfill auffüllen
+        Warum?: weil indem wir die Daten der verganheit anschauen, bessere ergebnisse für die Missing values, als durch median, mean oder forword-fill erzielen
+
+- Data preparation --- 5 min --- Patryk
+	- scalen (notwenig LSTM), wir wollen die Daten normalisieren, da die features verschiedene ranges haben
+	- split features and labels
+	- split train and test data
+	- flip seuquenz data
+	- Reshape the data into 3 diimensional data (Notwendig für LSTM)
+	- turn data into tensors
+
+- Datset and Dataloader --- 1 min --- Patryk
+	- short explanation
+	- explain BS
+
+- Model Architecture --- 7 min --- Firaz/Patryk
+	- Why LSTM? -> Wir brauchen ein model mit einem layer, der die Daten immerwieder anschaut und muster erkennt.
+    - LSTM is a subcategiry of RNN
+	- explain LSTM architecture / workflow
+        - Der input wird geladen
+        - Forget Gate
+            - zwei matrixen werden addiert
+            - die finale matrix kann nur Werte zwischen 0 und 1 enthalten
+            - diese wird mit dem hidden cell multipliziert
+            - die Werte können nur kleiner werden oder bleiben wie sie sind
+            - dient um etwas zu vergessen/minimieren
+        - Cell State
+            - input wird einmal mit sigmoid aktiviert und mit einer matrix verrechnet
+            - input wird einmal mit tanh verrechnet und mit einer matrix verrechnet
+            - die beiden matixen werden miteinander multipliziert
+            - das ergebniss wird auf das hidden cell addiert (neues lernen)
+        - Hidden State Update
+            - Input wird mit sigmoid aktiviert und mit einer matrix verrechnet
+            - Das ergebnis wird mit der Hidden Cell (welche mit tanh aktiviert wird) verrechnet
+            - Das ergebnis dient zur aktualsierung der Hidden State, welche beim neuen input mitgegeben wird
+	- explain our architecture
+        - ...
+	- expain forward pass
+        - ...
+
+- Training + Evaluation --- 5 min --- Patryk
+        - explain parameter choice
+                - criterion: MSELOSS()
+                - optimizer: Adam()
+                - epochs: 3, nicht mehr gebraucht
+	- short explanation of the trainloop
+                - ...
+	- show training results
+                - akzeptable trainingsergebnisse
+	- Explain Values of the validation
+                - Weil wir ein regressions problem haben benutzen wir MSE, MAE und RMSE
+	- Explain Evaluation
+                - ...
+
+
+---> 38 min
+
+Patyk: 21 min
+Firaz: 17 min
+--------------------------------------------------------------------------
