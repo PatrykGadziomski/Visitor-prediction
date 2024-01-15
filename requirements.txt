@@ -2,3 +2,6 @@ pandas
 meteostat
 seaborn
 openpyxl
+torchsummary
+torchinfo
+torch
