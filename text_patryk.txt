@@ -1,10 +1,7 @@
 STAI - Projekt Präsenttaion
 --------------------------------------------------------------------------
-Dauer: 20 min
 
 Themen:
-
-Patryk --- 4,5 min
 
 - Einführung --- Patryk
     - Begrüßung
@@ -73,9 +70,4 @@ Patryk --- 4,5 min
 	- Explain Evaluation
                 - ...
 
-
----> 38 min
-
-Patyk: 21 min
-Firaz: 17 min
 --------------------------------------------------------------------------
