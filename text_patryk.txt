@@ -3,19 +3,22 @@ STAI - Projekt Präsenttaion
 Dauer: 20 min
 
 Themen:
-- Einführung --- 3 min --- Patryk
+
+Patryk --- 4,5 min
+
+- Einführung --- Patryk
     - Begrüßung
     - Projekt beschreiben (Idee, Ziel, Methode)
     - Die Verbindung zur BWI-Bibliothek darstellen
     - Workflow kurz erläutern
     - Auf Teil 0. nicht wirklich eingehen
 
-- Data Exploration --- 3 min --- Patryk
+- Data Exploration --- Patryk
     - Die Daten wurden händlich erfasst und in tabellenfor  gebracht
     - Zeitreihendaten (Zeitstempel, Anzahl der Besucher)
 	- Viele Missing Values
 
-- Data preprocessing --- 4 min --- Patryk
+- Data preprocessing --- Patryk
 	- Missing values mit backfill auffüllen
         Warum?: weil indem wir die Daten der verganheit anschauen, bessere ergebnisse für die Missing values, als durch median, mean oder forword-fill erzielen
 
@@ -56,7 +59,7 @@ Themen:
 	- expain forward pass
         - ...
 
-- Training + Evaluation --- 5 min --- Patryk
+- Evaluation --- 5 min --- Patryk (more positive)
         - explain parameter choice
                 - criterion: MSELOSS()
                 - optimizer: Adam()
