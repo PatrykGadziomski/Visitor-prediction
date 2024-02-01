@@ -5,3 +5,8 @@ openpyxl
 torchsummary
 torchinfo
 torch
+numpy
+matplotlib
+holidays
+sklearn
+copy
