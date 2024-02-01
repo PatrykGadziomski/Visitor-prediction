@@ -8,5 +8,3 @@ torch
 numpy
 matplotlib
 holidays
-sklearn
-copy
