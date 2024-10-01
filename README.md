@@ -1,5 +1,13 @@
 # Visitor-prediction
 
+<figure>
+    <img 
+    src="./img/banner.png" 
+    width="700px"
+    alt='HdM X Stuttgart University'
+    >
+</figure>
+
 **Project description:**
 
 For the project in "Selected Topics of AI" we decided to make a visitor forecast for the BWI library (library of the Institute of Business Administration) at the University of Stuttgart.
