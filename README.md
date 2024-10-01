@@ -3,7 +3,6 @@
 <figure>
     <img 
     src="./img/banner.png" 
-    width="700px"
     alt='HdM X Stuttgart University'
     >
 </figure>
